@@ -24,6 +24,15 @@ class CooksController < ApplicationController
     @cook = Cook.find(params[:id])
   end
 
+  def destroy
+   if cook = Cook.find(params[:id])
+    cook.destroy
+    redirect_to root_path
+   else
+    render :show
+   end
+  end
+
   private
 
   def cook_params
