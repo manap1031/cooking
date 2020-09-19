@@ -18,12 +18,12 @@
         <div class="contents row">
           <% @cooks.each do |cook| %>
             <li>
-              <%# <%= link_to cook_path(cook.id) do %> 
+               <%= link_to cook_path(cook.id) do %> 
                 <div class="content_post"> 
                   <%= image_tag cook.image, class: 'content_post2'%>
                   <p class="name">料理名:<%= cook.recipe_name %></p> 
                   </div>
-              <%# <% end %> 
+              <% end %> 
             </li>
           <% end %>
         </div>

@@ -1,0 +1,102 @@
+.item-show{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipe-name-box{
+  width: 60%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: #4c4c4c;
+  padding: 10px 0 5px 0;
+  background-color: #faf1da;
+  border: solid 2px rgba(190, 186, 136,1);
+  border-radius: 15px;
+  word-break: break-all;
+}
+.item-box-image{
+  height: 50vh;
+  width: 50vw;
+  min-height: 300px;
+  object-fit: contain;
+  margin-top: 30px 0 0 0;
+}
+.table{
+  width: 100%;
+  margin-bottom: 30px;
+  word-break: break-all;
+}
+.detail-name{
+  width: 20%;
+  background-color: #faf1da;
+  border: solid 2px rgba(190, 186, 136,1);
+  font-size: 20px;
+  text-align: center;
+  color: #4c4c4c;
+  border-radius: 15px;
+}
+.detail-value{
+  width: 80%;
+  padding: 10px;
+  background-color: #faf1da;
+  border: solid 2px rgba(190, 186, 136,1);
+  font-size: 20px;
+  font-weight: bold;
+  color: #4c4c4c;
+  border-radius: 15px;
+}
+.detail-name2{
+  width: 20%;
+  background-color:#faf1da;
+  border: solid 2px rgba(190, 186, 136,1);
+  font-size: 20px;
+  color: #4c4c4c;
+  text-align: center;
+  border-radius: 15px;
+}
+.detail-value2{
+  width: 80%;
+  padding: 10px;
+  background-color: #faf1da;
+  border: solid 2px rgba(190, 186, 136,1);
+  font-size: 20px;
+  font-weight: bold;
+  color: #4c4c4c;
+  border-radius: 15px;
+  white-space: pre-wrap;
+  max-width: 100px;
+  max-height: 300px;
+}
+.show-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 100px 30px 100px;
+}
+.show-btn:hover{
+  border-color: #59b1eb;
+}
+.show-btn1{
+  align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  display: inline-block;
+  padding: 0.2em 1em 0.2em;
+  color: #4c4c4c;
+  border: solid 2px rgba(190, 186, 136,1);
+  border-radius: 50px;
+  background-color: #faf1da;
+  cursor: pointer;
+}
+.show-btn1:hover{
+  border: solid 5px  #59b1eb;
+  background-color:  rgb(247, 215, 136);
+}

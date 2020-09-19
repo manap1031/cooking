@@ -16,6 +16,14 @@ class CooksController < ApplicationController
     end
   end
 
+  def show
+    @cook = Cook.find(params[:id])
+  end
+
+  def edit
+    @cook = Cook.find(params[:id])
+  end
+
   private
 
   def cook_params
