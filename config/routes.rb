@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root to: "cooks#index"
-  resources :cooks, only: [:index, :new, :create, :show, :destroy]
+  resources :cooks, only: [:index, :new, :create, :show, :destroy, :edit, :update]
 end

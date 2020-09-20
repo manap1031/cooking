@@ -24,6 +24,15 @@ class CooksController < ApplicationController
     @cook = Cook.find(params[:id])
   end
 
+  def update
+    @cook = Cook.find(params[:id])
+    if @cook.update(cook_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
   def destroy
    if cook = Cook.find(params[:id])
     cook.destroy

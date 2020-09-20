@@ -1,0 +1,34 @@
+<div class="main">
+
+    <div class="contents">
+      <%= form_with(model: @cook, local: true) do |form| %>
+        <div class="send">
+         <%= form.submit "変更する", class: 'submit'%>
+        </div>
+
+        <div class="image-upload">
+          <%= form.file_field :image, class: 'hidden'%>
+            <span class="indispensable">必須</span>
+        </div>
+
+        <%# <div class="integer">
+          <%= form.text_field :name, class: 'item-text', placeholder: "ニックネーム" %>
+          <%# <span class="indispensable">必須</span> %>
+        <%# </div>  %>
+
+        <div class="integer">
+          <%= form.text_field :recipe_name, class: 'item-text', placeholder: "料理名" %>
+          <span class="indispensable">必須</span>
+        </div>
+
+        <div class="recipe">
+          <%= form.text_area :recipe, class: 'item-area', placeholder: "レシピ"%>
+          <span class="indispensable1">必須</span>
+        </div>
+        <div class="btn">
+         <%=link_to 'もどる', root_path, class:"back-btn" %>
+        </div>
+      <% end %>
+    </div>
+
+</div>
