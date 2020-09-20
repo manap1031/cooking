@@ -1,0 +1,52 @@
+<div class="background">
+  <div class="session-main">
+
+    <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+      
+      <h1 class="session">ログイン画面</h1>
+
+       <div class="error-message">
+          <%= render "devise/shared/error_messages", resource: resource %>
+        </div>
+      
+      
+      <div class="all-field">
+        
+
+        <div class="field">
+           <div class="field2">
+           <span class="indispensable">必須</span>
+           <label class="session2">Emaile</label></div>
+          <%= f.email_field :email, autofocus: true, autocomplete: "off", class: "field1" %>
+        </div>
+
+        <div class="field">
+           <div class="field2">
+           <span class="indispensable">必須</span>
+           <label class="session2">パスワード</label></div>
+          <%= f.password_field :password, autocomplete: "off", class: "field1" %>         
+        </div>
+
+        <div class="field">
+           <div class="field2">
+           <span class="indispensable">必須</span>
+           <label class="session2">パスワード(確認)</label></div>
+          <%= f.password_field :password, autocomplete: "off", class: "field1" %>
+        </div>
+
+        <% if devise_mapping.rememberable? %>
+          <div class="field">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me %>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="actions">
+        <%= link_to "もどる", root_path, class: "log-in-btn1" %>
+        <%= f.submit "ログイン", class: "log-in-btn" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+

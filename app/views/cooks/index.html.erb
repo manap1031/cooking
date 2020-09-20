@@ -1,11 +1,19 @@
 <div class="main">
   <div class="fancybox12">
       <div class="log">
-        <%= link_to "ログイン", "#", class: "post" %>
+      <% if user_signed_in? %>
+       <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+       <% else %>
+       <%= link_to "ログイン", new_user_session_path, class: "post" %>
+      <% end%>
       </div>
       <h1 class="title">タイトル</h1>
       <div class="log">
-        <%= link_to "新規登録", "#", class: "post" %>
+       <% if user_signed_in? %>
+        <%= link_to "マイページ", "#" %>
+        <% else %>
+        <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+       <% end %>
        </div>
     </div>
 
