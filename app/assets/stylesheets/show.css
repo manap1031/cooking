@@ -1,3 +1,19 @@
+.background-show{
+  background-color: honeydew;
+  width: 100%;
+  height: 100vh;
+  padding-top: 40px;
+}
+.main-show{
+  background-image: url("image-new.png");
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #4c4c4c; 
+  overflow: auto;
+}
 .item-show{
   width: 100%;
   display: flex;
@@ -5,7 +21,7 @@
   align-items: center;
 }
 .item-box{
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;

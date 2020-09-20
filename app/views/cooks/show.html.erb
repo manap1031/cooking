@@ -1,33 +1,35 @@
-<div class="main">
-  
-  <div class="item-show"> 
-    <div class="item-image-content">
-      <%= image_tag @cook.image, class:"item-box-image" %>
+<div class="background-show">
+  <div class="main-show">
+    
+    <div class="item-show"> 
+      <div class="item-image-content">
+        <%= image_tag @cook.image, class:"item-box-image" %>
+      </div>
+
+      <div class="item-box">
+        <h2 class="recipe-name-box">
+          <%= @cook.recipe_name %>
+        </h2>
+        
+        <table class="table">
+            <tr> 
+              <th class="detail-name">投稿者名</th> 
+              <td class="detail-value"><%= "#" %>
+              </td> 
+            </tr>
+            <tr>
+              <th class="detail-name2">レシピ</th>
+              <td class="detail-value2"><%= @cook.recipe %>
+            </tr>
+        </table>
+      </div> 
     </div>
 
-    <div class="item-box">
-      <h2 class="recipe-name-box">
-        <%= @cook.recipe_name %>
-      </h2>
+    <div class="show-btn">
+      <%= link_to '編集', edit_cook_path(@cook.id), method: :get, class: "show-btn1" %>
+      <%= link_to '戻る', root_path, class: "show-btn1"%>
+      <%= link_to '削除', cook_path(@cook.id), method: :delete, class: "show-btn1" %>
       
-      <table class="table">
-           <tr> 
-             <th class="detail-name">投稿者名</th> 
-            <td class="detail-value"><%= "#" %>
-            </td> 
-          </tr>
-          <tr>
-            <th class="detail-name2">レシピ</th>
-            <td class="detail-value2"><%= @cook.recipe %>
-          </tr>
-      </table>
-    </div> 
-  </div>
-
-  <div class="show-btn">
-    <%= link_to '編集', "#", method: :get, class: "show-btn1" %>
-    <%= link_to '戻る', root_path, class: "show-btn1"%>
-    <%= link_to '削除', cook_path(@cook.id), method: :delete, class: "show-btn1" %>
-    
+    </div>
   </div>
 </div>

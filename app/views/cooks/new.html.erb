@@ -1,27 +1,29 @@
-<div class="main">
+<div class="background">
+  <div class="main-new">
 
-    <div class="contents">
-     <%= form_with(model: @cook, local: true) do |form| %>
-        <div class="send">
-         <%= form.submit "投稿する", class: 'submit'%>
-        </div>
+      <div class="contents">
+      <%= form_with(model: @cook, local: true) do |form| %>
+          <div class="send">
+          <%= form.submit "投稿する", class: 'submit'%>
+          </div>
 
-        <div class="upload">
-          <%= form.file_field :image, class: 'hidden'%>
-        </div>
-      
-        <div class="upload">
-          <%= form.text_field :recipe_name, autocomplete: "off", class: 'item-text', placeholder: "料理名" %>
-        </div>
+          <div class="upload">
+            <%= form.file_field :image, class: 'hidden'%>
+          </div>
+        
+          <div class="upload">
+            <%= form.text_field :recipe_name, autocomplete: "off", class: 'item-text', placeholder: "料理名" %>
+          </div>
 
-        <div class="upload">
-          <%= form.text_area :recipe, autocomplete: "off", class: 'item-area', placeholder: "レシピ"%>
-        </div>
+          <div class="upload">
+            <%= form.text_area :recipe, autocomplete: "off", class: 'item-area', placeholder: "レシピ"%>
+          </div>
 
-        <div class="btn">
-         <%=link_to 'もどる', root_path, class:"back-btn" %>
-        </div>
-      <% end %>
+          <div class="btn">
+          <%=link_to 'もどる', root_path, class:"back-btn" %>
+          </div>
+        <% end %>
+      </div>
+
     </div>
-
 </div>
