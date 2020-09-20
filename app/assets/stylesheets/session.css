@@ -1,0 +1,105 @@
+.background{
+  background-color: honeydew;
+  width: 100%;
+  height: 100vh;
+  padding-top: 40px;
+}
+.error-message{
+  font-size: 15px;
+  text-align: center;
+}
+.session-main{
+  background-image: url("image-new.png");
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #4c4c4c; 
+  overflow: auto;
+}
+.session{
+  text-align: center;
+  font-size: 50px;
+}
+.session2{
+  font-size: 20px;
+}
+.all-field{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.field{
+  text-align: center;
+  padding: 0;
+}
+.indispensable2{
+  background: #ea352d;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+.field2{
+  text-align: left;
+  margin-left: 10px;
+  color: #4c4c4c;
+  font-weight: bold;
+}
+.field1{
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4c4c4c;
+  padding: 10px 0 5px 0;
+  background-color: #faf1da;
+  border: solid 2px rgba(190, 186, 136,1);
+  border-radius: 15px;
+  word-break: break-all;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+.actions{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.log-in-btn{
+  width: 200px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  display: inline-block;
+  padding: 0.2em 1em 0.2em;
+  color: #4c4c4c;
+  border: solid 2px rgba(190, 186, 136,1);
+  border-radius: 50px;
+  background-color: #faf1da;
+  cursor: pointer;
+}
+.log-in-btn:hover{
+  border: solid 5px  #59b1eb;
+  background-color:  rgb(247, 215, 136);
+}
+.log-in-btn1{
+  width: 150px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  display: inline-block;
+  padding: 0.2em 1em 0.2em;
+  color: #4c4c4c;
+  border: solid 2px rgba(190, 186, 136,1);
+  border-radius: 50px;
+  background-color: #faf1da;
+  cursor: pointer;
+  text-align: center;
+}
+.log-in-btn1:hover{
+  border: solid 5px  #59b1eb;
+  background-color:  rgb(247, 215, 136);
+}
