@@ -3,6 +3,7 @@ class CreateCooks < ActiveRecord::Migration[6.0]
     create_table :cooks do |t|
       t.string :recipe_name
       t.string :recipe
+ 
       t.timestamps
     end
   end

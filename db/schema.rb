@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 2020_09_20_040444) do
   end
 
   create_table "cooks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "recipe_name"
-    t.string "recipe"
+    t.string "recipe_name", null: false
+    t.string "recipe", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
