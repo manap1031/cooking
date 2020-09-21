@@ -1,5 +1,5 @@
 class CooksController < ApplicationController
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :create]
 
   def index
     @cooks = Cook.includes(:user).order('created_at DESC')

@@ -1,4 +1,4 @@
- <div class="background">
+ <div class="background-main">
   <div class="main">
     <div class="fancybox12">
         <div class="log">
@@ -29,7 +29,7 @@
               <li>
                 <%= link_to cook_path(cook.id) do %> 
                   <div class="content-post"> 
-                    <%= image_tag cook.image, class: 'content_post2'%>
+                    <%= image_tag cook.image, class: 'content-post2'%>
                     <p class="name">料理名:<%= cook.recipe_name %></p> 
                   </div>
                 <% end %> 
