@@ -41,15 +41,16 @@
   margin-bottom: 10px;
 }
 .item-box-image{
-  height: 50vh;
-  width: 50vw;
+  height: 40vh;
+  width: 40vw;
+  margin: 20px 0;
   min-height: 300px;
-  object-fit: contain;
-  margin: 5px 10px;
+  border: 3px solid #ccc;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
 }
 .item-image-content{
-  background-color: floralwhite;
-  border-radius: 15px;
   padding: 0px 10px;
   margin-bottom: 10px;
 }
@@ -57,6 +58,7 @@
   width: 100%;
   margin-bottom: 30px;
   word-break: break-all;
+  
 }
 .detail-name{
   width: 20%;
