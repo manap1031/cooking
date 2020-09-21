@@ -1,7 +1,13 @@
+.background{
+  height: 100%;
+  width: 100%;
+}
 .main{
   background-image: url("image-new.png");
-  height: 100vh;
-  width: 100%;
+  height: 90%;
+  width: 90%;
+  padding-bottom: 50px;
+  margin: auto;
   overflow: auto;
 }
 .fancybox12 {
@@ -19,7 +25,6 @@
   }
   .title{
     font-size: 50px;
-
   }
   .log{
   align-items: center;
@@ -64,50 +69,51 @@ a:hover{
   border: solid 5px  #59b1eb;
 }
 .item-contents{
+  width: 100%;
+  padding: 5vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vh 0;
 }
 .item-lists{
+  width: 90%;
   justify-content: center;
 }
 li{
   list-style: none;
+  width: calc(100%/4);
 }
-div.contents.row{
+.contents-row{
   display: flex;
   flex-wrap: wrap;
   font-weight: normal;
 }
-div.content_post{
-  margin: 0px 10px 10px 10px;
+.content-post{
+  margin: 0 10px 10px 10px ;
 }
 .content_post2{
-  height: 300px;
-  width: 300px;
+  height: 280px;
+  width: 280px;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   border-radius: 10px;
+  max-width: 100%;
+  border: solid 3px #ccc;
 }
 .name{
   text-align: left;
   margin: 0 0 0 10px;
+  margin-bottom: 30px;
   color: #4c4c4c;
   font-size: 15px;
   font-weight: bold;
 }
-.name2{
-  display: block;
-  margin: auto;
-  padding: auto;
-}
-.footer{
+footer{
   color: #4c4c4c;
-  background-color:  #faf1da;
-  box-shadow: inset 0 0 40px rgba(190, 186, 136,1), 0 2px 2px #ccc;
-  border: solid 2px rgba(190, 186, 136,1);
+  background-color: honeydew;
   text-align: center;
-  margin: 0;
-  border-radius: 5px;
+}
+.footer1{
+opacity: 0.5;
+margin: 0;
 }
