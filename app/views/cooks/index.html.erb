@@ -10,7 +10,7 @@
       <h1 class="title">タイトル</h1>
       <div class="log">
        <% if user_signed_in? %>
-        <%= link_to "マイページ", "#" %>
+        <%= link_to "マイページ", user_path(current_user.id) %>
         <% else %>
         <%= link_to "新規登録", new_user_registration_path, class: "post" %>
        <% end %>
