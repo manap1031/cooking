@@ -1,5 +1,5 @@
 class CooksController < ApplicationController
-  before_action :move_to_index, except: [:index, :show, :create]
+  before_action :move_to_index, except: [:index, :show, :search]
 
   def index
     @cooks = Cook.includes(:user).order('created_at DESC')
@@ -42,6 +42,10 @@ class CooksController < ApplicationController
     else
       render :show
     end
+  end
+
+  def search
+    @cooks = Cook.search(params[:keyword])
   end
 
   private

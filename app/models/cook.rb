@@ -5,4 +5,12 @@ class Cook < ApplicationRecord
   validates :recipe_name, presence: true
   validates :recipe,      presence: true
   validates :image,       presence: true
+
+  def self.search(search)
+    if search != ""
+      Cook.where('text LIKE(?)', "%#{search}%")
+    else
+      Cook.all
+    end
+  end
 end
