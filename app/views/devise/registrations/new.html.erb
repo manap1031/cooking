@@ -1,15 +1,9 @@
-<div class="background">
+<div class="background-session">
   <div class="session-main">
 
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
-    
-     <h1 class="session">新規登録画面</h1>
 
-    
-        <div class="error-message">
-          <%= render "devise/shared/error_messages", resource: resource %>
-        </div>
-      
+     <h1 class="session">新規登録画面</h1>
       
       <div class="all-field">
         <div class="field">
