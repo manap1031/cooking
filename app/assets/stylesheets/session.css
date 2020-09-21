@@ -15,6 +15,7 @@
   overflow: auto;
 }
 .session{
+  margin-top: 80px;
   text-align: center;
   font-size: 50px;
 }
