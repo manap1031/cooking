@@ -8,7 +8,7 @@ class Cook < ApplicationRecord
 
   def self.search(search)
     if search != ""
-      Cook.where('text LIKE(?)', "%#{search}%")
+      Cook.where('recipe LIKE(?) OR recipe_name LIKE(?)', "%#{search}%", "%#{search}%")
     else
       Cook.all
     end
