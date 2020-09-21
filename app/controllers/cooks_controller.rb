@@ -2,7 +2,7 @@ class CooksController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @cooks = Cook.all
+    @cooks = Cook.includes(:user).order('created_at DESC')
   end
 
   def new
@@ -36,12 +36,12 @@ class CooksController < ApplicationController
   end
 
   def destroy
-   if cook = Cook.find(params[:id])
-    cook.destroy
-    redirect_to root_path
-   else
-    render :show
-   end
+    if cook = Cook.find(params[:id])
+      cook.destroy
+      redirect_to root_path
+    else
+      render :show
+    end
   end
 
   private
@@ -51,9 +51,6 @@ class CooksController < ApplicationController
   end
 
   def move_to_index
-    unless user_signed_in?
-      redirect_to action: :index
-    end
+    redirect_to action: :index unless user_signed_in?
   end
-
 end

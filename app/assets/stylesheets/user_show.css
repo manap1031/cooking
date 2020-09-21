@@ -1,12 +1,18 @@
+.background{
+  height: 100%;
+  width: 100%;
+}
 .main-user-show{
   background-image: url("image-new.png");
-  height: 100vh;
-  width: 100%;
+  height: 90%;
+  width: 90%;
+  padding-bottom: 50px;
+  margin: auto;
   overflow: auto;
 }
 .fancybox15{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 40px;
   width: aout;
@@ -16,26 +22,27 @@
   border: solid 3px rgba(190, 186, 136,1);
   border-radius: 5px;
   box-shadow: inset 0 0 40px rgba(190, 186, 136,1), 0 2px 2px #ccc;
-  }
-  .title-show{
-    font-size: 30px;
-  }
-  .log-show{
-    align-items: center;
-    font-size: 30px;
-    display: inline-block;
-    padding: 0.2em 1em 0.2em;
-    color: #4c4c4c;
-    border: solid 2px rgba(190, 186, 136,1);
-    border-radius: 50px;
-    background-color: #faf1da;
-    cursor: pointer;
-    font-weight: 700;
-    }
-    .log-show:hover{
-      background-color:  rgb(247, 215, 136);
-      border: solid 5px  #59b1eb;
-    }
+ }
+.title-show{
+  font-size: 30px;
+  font-weight: 700;
+}
+.log-show{
+  align-items: center;
+  font-size: 30px;
+  display: inline-block;
+  padding: 0.2em 1em 0.2em;
+  color: #4c4c4c;
+  border: solid 2px rgba(190, 186, 136,1);
+  border-radius: 50px;
+  background-color: #faf1da;
+  cursor: pointer;
+  font-weight: 700;
+}
+.log-show:hover{
+  background-color:  rgb(247, 215, 136);
+  border: solid 5px  #59b1eb;
+}
   .post-show1{
     font-size: 30px;
     font-weight: 700;
@@ -78,31 +85,36 @@
     border: solid 5px  #59b1eb;
   }
   .item-contents-show{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5vh 0;
+    width: 100%;
+  padding: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
   .item-lists-show{
+    width: 90%;
     justify-content: center;
   }
   li{
     list-style: none;
+    width: calc(100%/4);
   }
   div.contents-show.row{
     display: flex;
-    flex-wrap: wrap;
-    font-weight: normal;
+  flex-wrap: wrap;
+  font-weight: normal;
   }
   div.content_post-show{
-    margin: 0px 10px 10px 10px;
+    margin: 0 10px 10px 10px ;
   }
   .content_post-show2{
-    height: 300px;
-    width: 300px;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 10px;
+    height: 280px;
+  width: 280px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  max-width: 100%;
+  border: solid 3px #ccc;
   }
   .name-show{
     text-align: left;

@@ -1,34 +1,36 @@
-<div class="main-user-show">
+<div class="background">
+  <div class="main-user-show">
 
-  <div class="fancybox15">
-  <h1 class="title-show"><%= @nickname %>さんの投稿一覧</h1>
-    <div class="log-show">
-      <%= link_to "もどる", root_path %>
-    </div>
-    
-  </div>
-
-  <div class="post-show">
-    <a class="post-show1" href="/cooks/new">投稿する</a>
-  </div>
-
-  <div class="item-contents-show"> 
-    <ul class="item-lists-show">
-        <div class="contents-show row">
-          <% @cooks.each do |cook| %>
-            <li>
-              <%= link_to cook_path(cook.id) do %>
-                <div class="content_post-show"> 
-                  <%= image_tag cook.image, class: 'content_post-show2'%>
-                  <p class="name-show">料理名:<%= cook.recipe_name %></p> 
-                  <%# <p class="name">投稿者:<%= tweet.user.nickname %>
-                  <%# </p>  %>
-                </div>
-              <% end %>
-            </li>
-          <% end %>
-        </div>
-      </ul>
+    <div class="fancybox15">
+    <h1 class="title-show"><%= @nickname %>さんの投稿一覧</h1>
+      <div class="log-show">
+        <%= link_to "もどる", root_path %>
+      </div>
+      
     </div>
 
+    <div class="post-show">
+      <a class="post-show1" href="/cooks/new">投稿する</a>
+    </div>
+
+    <div class="item-contents-show"> 
+      <ul class="item-lists-show">
+          <div class="contents-show row">
+            <% @cooks.each do |cook| %>
+              <li>
+                <%= link_to cook_path(cook.id) do %>
+                  <div class="content_post-show"> 
+                    <%= image_tag cook.image, class: 'content_post-show2'%>
+                    <p class="name-show">料理名:<%= cook.recipe_name %></p> 
+                    <%# <p class="name">投稿者:<%= tweet.user.nickname %>
+                    <%# </p>  %>
+                  </div>
+                <% end %>
+              </li>
+            <% end %>
+          </div>
+        </ul>
+      </div>
+
+  </div>
 </div>
