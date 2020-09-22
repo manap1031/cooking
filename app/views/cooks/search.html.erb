@@ -1,0 +1,35 @@
+<div class="background-search">
+  <div class="main-search">
+    <div class="fancybox20">
+      <h1 class="title-search">検索結果</h1>
+      <div class="log-search">
+        <%= link_to "もどる", root_path %>
+     </div>
+    </div>
+ 
+    <div class="post-search">
+      <%= form_with(url: search_cooks_path, local: true, method: :get, class: "search-form-search") do |form| %>
+      <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input-search" %>
+      <%= form.submit "検索", class: "search-btn-search" %>
+      <% end %>
+    </div>
+
+
+    <div class="item-contents-search">
+      <ul class="item-list-search">
+        <div class="contents-row-search">
+          <% @cooks.each do |cook| %>
+          <li>
+            <%= link_to cook_path(cook.id) do%>
+            <div class="content-post-search">
+              <%= image_tag cook.image, class: 'content-post-search2'%>
+              <p class="name-search"><%= cook.recipe_name %></p>
+            </div>
+            <% end %>
+          </li>
+          <% end %>
+        </div>
+      </ul> 
+    </div>
+  </div>
+</div>
