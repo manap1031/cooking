@@ -5,14 +5,13 @@
       
       <h1 class="session">ログイン画面</h1>
 
-       <div class="error-message">
-          <%= render "devise/shared/error_messages", resource: resource %>
+      
+        <div class="login-flash-message">
+           <%= flash[:notice] %>
+           <%= flash[:alert] %>
         </div>
       
-      
-      <div class="all-field">
-        
-
+      <div class="all-field">        
         <div class="field">
            <div class="field2">
            <span class="indispensable">必須</span>

@@ -100,3 +100,10 @@
   border: solid 5px  #59b1eb;
   background-color:  rgb(247, 215, 136);
 }
+.login-flash-message{
+  align-items: center;
+  color: #ea352d;
+  font-size: 15px;
+  text-align: center;
+  margin: 15px 0;
+}
