@@ -15,7 +15,7 @@
         <div class="field">
           <div class="field2">
            <span class="indispensable2">必須</span>
-          <label class="session2">Nickname</label>
+          <label class="session2">Nickname(10字以内)</label>
           </div>
           <%= f.text_field :nickname, autocomplete: "off", class: "field1" %>  
         </div>
@@ -23,7 +23,7 @@
         <div class="field">
           <div class="field2">
             <span class="indispensable2">必須</span>
-          <label class="session2">Email</label>
+          <label class="session2">Email(@を入れる)</label>
           </div>
           <%= f.email_field :email, autofocus: true, autocomplete: "off", class: "field1" %>
           
@@ -32,7 +32,7 @@
         <div class="field">
            <div class="field2">
            <span class="indispensable2">必須</span>
-           <label class="session2">パスワード</label>
+           <label class="session2">パスワード(6字以上)</label>
            </div>
           <%= f.password_field :password, autocomplete: "off", class: "field1" %>
         </div>

@@ -1,24 +1,39 @@
-# README
+## usersテーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column                | Type    | Options     |
+| --------------------- | ------- | ----------- |
+| nickname              | string  | null: false |
+| email                 | string  | null: false |
+| password              | string  | null: false |
+| password_confirmation | string  | null: false |
 
-Things you may want to cover:
+### assosiation
+- has_many: cooks
 
-* Ruby version
 
-* System dependencies
+## cooksテーブル
 
-* Configuration
+| Column                | Type        | Options                     |
+| --------------------- | ----------- | --------------------------- |
+| recipe_name           | string      | null: false                 |
+| recipe                | text        | null: false                 |
+| user_id               | references  |null:false, foreign_key:true |
 
-* Database creation
+### assosiation
+- belongs_to: user
+- has_many: images
 
-* Database initialization
 
-* How to run the test suite
+## imagesテーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+| Column                | Type        | Options                     |
+| --------------------- | ----------- | --------------------------- |
+| image                 | string      | null: false                 |
+| posts_id              | references  |null:false, foreign_key:true |
 
-* Deployment instructions
+### asossiation
+- belongs_to: cook
 
-* ...
+
+
+
