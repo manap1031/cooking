@@ -5,18 +5,28 @@
       <div class="item-image-content">
         <%= image_tag @cook.image, class:"item-box-image" %>
       </div>
+        
+      <div class="show-nickname">
+        <% if user_signed_in? && current_user.id == @cook.user_id %>
+        <% else %>
+        <%= link_to @cook.user.nickname, user_path(@cook.user.id), method: :get, class: "show-btn5" %>
+        <h2 class="nickname">さんの投稿一覧</h2>
+        <% end %>
+      </div>
 
       <div class="item-box">
-        <h2 class="recipe-name-box">
-          <%= @cook.recipe_name %>
-        </h2>
         
         <table class="table">
-            <tr> 
-              <th class="detail-name">投稿者名</th> 
+            <th class="detail-name">投稿者名</th> 
               <td class="detail-value"><%= @cook.user.nickname %>
               </td> 
+              </tr>
+            <tr> 
+              <th class="detail-name">料理名</th> 
+              <td class="detail-value"><%= @cook.recipe_name %>
+              </td> 
             </tr>
+            <tr> 
             <tr>
               <th class="detail-name2">レシピ</th>
               <td class="detail-value2"><%= @cook.recipe %>
