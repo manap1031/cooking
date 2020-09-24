@@ -7,6 +7,12 @@
           <%= form.submit "投稿する", class: 'submit'%>
           </div>
 
+      <div class="error-alert-new">
+        <div class="error-message-new">
+          <%= render "layouts/error_messages", model: form.object %>
+        </div>
+      </div>
+
           <div class="upload">
             <%= form.file_field :image, class: 'hidden'%>
           </div>

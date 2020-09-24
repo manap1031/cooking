@@ -103,3 +103,13 @@
   background-color:  rgb(247, 215, 136);
   border: solid 5px  #59b1eb;
 }
+.error-alert-new{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 0 0;
+}
+.error-message-new{
+  width: 100%;
+  font-size: 15px;
+  color:#ea352d;
+}
