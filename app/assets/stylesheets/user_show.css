@@ -44,7 +44,7 @@
   background-color:  rgb(247, 215, 136);
   border: solid 5px  #59b1eb;
 }
-.post-show1{
+/* .post-show1{
   font-size: 30px;
   font-weight: 700;
   display: inline-block;
@@ -58,7 +58,7 @@
 }
 .post-show1:hover{
   border: solid 5px  #59b1eb;
-}
+} */
 a{
   text-decoration: none;
   font-size: 20px;

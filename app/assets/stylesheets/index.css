@@ -72,6 +72,11 @@ a:hover{
   font-size: 30px;
   margin-top: 20px;
 }
+.post-search{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
 .search-input{
   font-size: 20px;
   font-weight: bold;
@@ -133,16 +138,34 @@ div.content-post{
   border: solid 3px #ccc;
 }
 .name{
+  background: rgba(240, 240, 240, 0.5);
   width: 100%;
   text-align: left;
   color: #4c4c4c;
   font-size: 15px;
   font-weight: bold;
+  border-radius: 10px;
+  padding-left: 5px;
 }
 .name2{
   display: block;
   margin: auto;
   padding: auto;
+}
+.post-show1{
+  font-size: 30px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.2em 1em 0.1em;
+  color: #4c4c4c;
+  border: solid 2px rgba(190, 186, 136,1);
+  border-radius: 50px;
+  background-color: #faf1da;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.post-show1:hover{
+  border: solid 5px  #59b1eb;
 }
 footer{
   color: #4c4c4c;
