@@ -17,12 +17,33 @@
             <%= form.file_field :image, class: 'hidden'%>
           </div>
         
+          <h2 class="recipe100">料理名(15字以内)</h2>
           <div class="upload">
-            <%= form.text_field :recipe_name, autocomplete: "off", class: 'item-text', placeholder: "料理名" %>
+          
+            <%= form.text_field :recipe_name, autocomplete: "off", class: 'item-text', placeholder: "例:麻婆豆腐" %>
           </div>
 
+          <h2 class="recipe100">レシピ(3000字以内)</h2>
           <div class="upload">
-            <%= form.text_area :recipe, autocomplete: "off", class: 'item-area', placeholder: "レシピ"%>
+            <%= form.text_area :recipe, autocomplete: "off", class: 'item-area', 
+            placeholder: "例:
+          木綿豆腐	1丁（300g）
+          合いびき肉	80g
+          ねぎのみじん切り	1/6本分
+          「Cook Do」甜麺醤	小さじ2（10g）
+          酒	小さじ1
+          にんにくのみじん切り	小さじ1
+          「Cook Do」熟成豆板醤	小さじ3（15g）
+          「Cook Do」トウチ醤	小さじ1（5g）
+          水	1カップ
+          「丸鶏がらスープ」	小さじ山盛り1（4g）
+          しょうゆ	小さじ1
+          水	大さじ1
+          片栗粉	大さじ1
+          「AJINOMOTO さらさらキャノーラ油」	小さじ1
+          粉ざんしょう・好みで	適量
+          小ねぎの小口切り	適量
+          ＊ 「Cook Do」熟成豆板醤 小さじ１は、チューブで８ｃｍ（約５ｇ）です。"%>
           </div>
 
           <div class="btn">
