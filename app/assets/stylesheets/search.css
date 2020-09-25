@@ -107,7 +107,7 @@ a:hover{
   flex-direction: column;
   align-items: center;
 }
-.item-lists-search{
+.item-list-search{
   width: 90%;
   justify-content: center;
 }
@@ -115,12 +115,12 @@ li{
   list-style: none;
   width: calc(100%/4);
 }
-div.contents-row-search{
+.contents-row-search{
   display: flex;
   flex-wrap: wrap;
   font-weight: normal;
 }
-div.content-post-search{
+.content-post-search{
   margin: 0 10px 10px 10px ;
 }
 .content-post-search2{
@@ -133,6 +133,7 @@ div.content-post-search{
   border: solid 3px #ccc;
 }
 .name-search{
+  background: rgba(240, 240, 240, 0.5);
   width: 100%;
   text-align: left;
   color: #4c4c4c;

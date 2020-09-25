@@ -103,6 +103,7 @@ div.content_post-show{
   border: solid 3px #ccc;
 }
 .name-show{
+  background: rgba(240, 240, 240, 0.5);
   text-align: left;
   margin: 0 0 0 10px;
   color: #4c4c4c;
