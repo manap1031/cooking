@@ -3,7 +3,6 @@ class CooksController < ApplicationController
 
   def index
     @cooks = Cook.includes(:user).order('created_at DESC')
-    
   end
 
   def new
@@ -12,7 +11,7 @@ class CooksController < ApplicationController
 
   def create
     @cook = Cook.new(cook_params)
-    if @cook.valid? 
+    if @cook.valid?
       @cook.save
       redirect_to root_path
     else
