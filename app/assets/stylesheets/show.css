@@ -68,6 +68,7 @@
   text-align: center;
   color: #4c4c4c;
   border-radius: 15px;
+  font-weight: bold;
 }
 .detail-value{
   width: 80%;
@@ -87,6 +88,7 @@
   color: #4c4c4c;
   text-align: center;
   border-radius: 15px;
+  font-weight: bold;
 }
 .detail-value2{
   width: 80%;
@@ -125,6 +127,33 @@
   cursor: pointer;
 }
 .show-btn1:hover{
+  border: solid 5px  #59b1eb;
+  background-color:  rgb(247, 215, 136);
+}
+.show-btn5{
+  width: 300px;
+  text-align: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  display: inline-block;
+  padding: 0.2em 1em 0.2em;
+  color: #4c4c4c;
+  border: solid 2px rgba(190, 186, 136,1);
+  border-radius: 50px;
+  background-color: #faf1da;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.show-nickname{
+  display: flex;
+  align-items: center;
+}
+.nickname{
+  font-size: 30px;
+  font-weight: bold;
+}
+.show-btn5:hover{
   border: solid 5px  #59b1eb;
   background-color:  rgb(247, 215, 136);
 }

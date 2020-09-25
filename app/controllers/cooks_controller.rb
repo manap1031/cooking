@@ -11,7 +11,7 @@ class CooksController < ApplicationController
 
   def create
     @cook = Cook.new(cook_params)
-    if @cook.valid? 
+    if @cook.valid?
       @cook.save
       redirect_to root_path
     else

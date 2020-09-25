@@ -24,6 +24,7 @@
             <div class="content-post-search">
               <%= image_tag cook.image, class: 'content-post-search2'%>
               <p class="name-search"><%= cook.recipe_name %></p>
+               <p class="name-search">投稿者:<%= cook.user.nickname %></p>
             </div>
             <% end %>
           </li>

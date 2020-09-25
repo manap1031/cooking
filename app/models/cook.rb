@@ -3,7 +3,7 @@ class Cook < ApplicationRecord
   belongs_to :user
 
   validates :recipe_name, presence: true, length: { maximum: 15 }
-  validates :recipe,      presence: true, length: { maximum: 3000 }
+  validates :recipe,      presence: true, length: { maximum: 1000 }
   validates :image,       presence: true
 
   def self.search(search)
